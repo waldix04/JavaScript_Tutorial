@@ -10,13 +10,18 @@
 
         <button onclick="
             cartQuantity = cartQuantity + 1;
+            // abgekürzt könnte man auch schreiben cartQuantity += 1;
             console.log(`Cart Quantity: ${cartQuantity}`);">Add to Card</button>
 
-        <button>+2</button>
+        <button onclick="cartQuantity = cartQuantity +2;
+        console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
 
-        <button>+3</button>
+        <button onclick="cartQuantity = cartQuantity +3;
+        console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
 
-        <button>Reset Card</button>
+        <button onclick="cartQuantity = cartQuantity = 0;
+        console.log(`Cart was reset!`);
+        console.log(`Cart Quantity: ${cartQuantity}`);">Reset Card</button>
 
         <script>
             let cartQuantity = 0;
